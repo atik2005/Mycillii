@@ -203,6 +203,17 @@
         }
         .action-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4); }
         .action-btn:disabled { background: #808B96; cursor: not-allowed; opacity: 0.7; box-shadow: none; }
+        
+        .join-group-btn {
+            display: block; width: 100%; text-align: center;
+            padding: 15px; font-size: 1rem; font-weight: 600; color: #fff;
+            border: none; border-radius: 12px; cursor: pointer; transition: all 0.3s;
+            background: linear-gradient(45deg, #28A745, #228B22); /* Green gradient */
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            margin-bottom: 20px;
+        }
+        .join-group-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4); }
+        .join-group-btn i { margin-right: 8px; }
 
         /* Other elements styling */
         .task-container, .card, .history-item, .leaderboard-item {
@@ -287,6 +298,12 @@
                         <div><h3>Total Income</h3><p id="total-earned">0.00</p></div>
                     </div>
                 </div>
+                
+                <!-- Telegram Group Join Button -->
+                <button class="join-group-btn" onclick="window.Telegram.WebApp.openLink('https://t.me/your_telegram_group_link')">
+                    <i class="fab fa-telegram-plane"></i> Join Our Telegram Group
+                </button>
+
                 <div id="earnings-graph-container" class="card">
                     <h3>Last 7 Days Earnings</h3>
                     <div id="earnings-chart" class="chart"></div><div id="earnings-chart-labels" class="chart-labels"></div>
@@ -305,7 +322,11 @@
                 <div id="ad-task-container"></div>
                 <h2>Bonus Tasks</h2><div id="dynamic-tasks-container"></div>
             </div>
-<script type='text/javascript' src='//pl27565874.effectivegatecpm.com/d4/7a/19/d47a1922ba247275d7c6955a80113308.js'></script>
+            
+            <!-- Ad Scripts -->
+            <script type='text/javascript' src='//pl27565874.effectivegatecpm.com/d4/7a/19/d47a1922ba247275d7c6955a80113308.js'></script>
+            <script src="https://ad.gigapub.tech/script?id=1993"></script>
+
             <div id="leaderboard-page" class="page">
                 <h2>Leaderboard</h2>
                 <div class="leaderboard-toggle">
